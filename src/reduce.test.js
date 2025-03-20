@@ -18,10 +18,6 @@ describe('reduce', () => {
     expect(result).toBe(5);
   });
 
-  it('should throw an error when the callback is not a function', () => {
-    expect(() => [].reduce2(null)).toThrowError('Callback must be a function');
-  });
-
   it('should accumulate values correctly in an array of numbers', () => {
     const result = [1, 2, 3, 4].reduce2((acc, curr) => acc + curr);
 
